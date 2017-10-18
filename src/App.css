@@ -13,38 +13,59 @@ h1 {
   margin: 30px 0;
 }
 
-.input-wrapp {
-  text-align: center;
-  display: flex;
+.main-wrapp {
   max-width: 90%;
   margin: 0 auto;
 }
 
-.input-wrapp,
+/*.input-wrapp,
 #to-do-list {
   max-width: 90%;
   margin: 0 auto;
+}*/
+
+.content-wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+#categories {
+  flex: 1 1 20%;
+  margin-top: 30px;
+}
+
+.task-title {
+  padding-right: 10px;
+}
+
+.forms-wrapp {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-wrapp {
+  text-align: center;
+  display: flex;
+  max-width: 250px;
 }
 
 .input-wrapp > input,
 .input-wrapp > button {
   border-radius: 50px;
-  padding: 12px 10px;
+  padding: 5px 10px;
   outline: none;
   font-size: 16px;
   box-sizing: border-box;
 }
 
 .input-wrapp > input {
-  flex: 1 1 75%;
   background: #f3f3f3;
-  margin-right: 2%;
+  /*margin-right: 2%;*/
   color: #666;
   border: 1px solid #cacaca;
 }
 
 .input-wrapp > button {
-  flex: 1 1 25%;
   background: linear-gradient(-10deg, #8516b3, #22a9b7);
   color: #fff;
   font-weight: bold;
@@ -57,16 +78,26 @@ h1 {
 }
 
 #to-do-list {
-  padding: 30px 0 30px 40px;
-  list-style-type: decimal;
+  list-style-type: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding: 0;
+  flex: 1 1 80%;
 }
 
 #to-do-list > li {
-  line-height: 40px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  padding: 0 5px;
+}
+
+#to-do-list > li:last-of-type {
+  border: none;
 }
 
 #to-do-list > li > input {
-  margin-left: 10px;
-  width: 18px;
+  margin: 0 10px;
+  width: 15px;
   height: 15px;
 }
