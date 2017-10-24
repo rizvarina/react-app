@@ -96,8 +96,41 @@ h1 {
   border: none;
 }
 
-#to-do-list > li > input {
+#to-do-list > li > input[type="checkbox"] {
   margin: 0 10px;
   width: 15px;
   height: 15px;
+}
+
+#to-do-list > li > input[type="text"] {
+  width: 70%;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+}
+
+.icon-delete, .icon-edit {
+  cursor: pointer;
+}
+
+.icon-delete,
+.icon-edit {
+  float: right;
+  margin: 14px 10px 0 0;
+}
+
+.icon-edit {
+  padding-left: 10px;
+}
+
+/*.edit-desc {
+  display: none;
+}*/
+
+.visible {
+  display: inline-block;
+}
+
+.edit-desc input {
+  margin-right: 5px;
 }
