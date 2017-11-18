@@ -13,6 +13,7 @@ const initialState = [
 export const todolist = (state = initialState, action) => {
 
     switch (action.type) {
+
         case constants.DELETE_ITEM:
           const copy = state.filter(val => val.id !== action.payload);
           return copy;
