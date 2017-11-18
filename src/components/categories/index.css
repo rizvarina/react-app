@@ -1,0 +1,21 @@
+#categories {
+  width: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: li;
+}
+
+ol ol {
+  margin-left: 20px;
+}
+
+.cat-item:before {
+  counter-increment: li;
+  content: counters(li,".") ". ";
+}
